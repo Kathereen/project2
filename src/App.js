@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Items from "./components/Items";
 
 class App extends React.Component {
   constructor(props){
@@ -10,10 +11,10 @@ class App extends React.Component {
           {
             id: 1,
             name: 'Квартира-студія',
-            pict: '1-к квартира.jpg',
+            pict: '1-кімнатна.jpg',
             descr: 'Квартира однокімнатна. Дизайн студія - відкритий творчий простір.',
             category: '1-кімнатні квартири',
-            price: '40000 $'
+            price: '40000'
 
           },
           
@@ -23,7 +24,7 @@ class App extends React.Component {
             pict: '2-к квартира.jpg',
             descr: 'Квартира двокімнатна. Затишна сімейна квартира з дитячою кімнатою і великим балконом.',
             category: '2-кімнатні квартири',
-            price: '50000 $'
+            price: '50000'
           },
           {
             id: 3,
@@ -31,7 +32,7 @@ class App extends React.Component {
             pict: 'дворівнева квартира.jpg',
             descr: 'Просторі апартаменти для самого вибагливого власника',
             category: '2-кімнатні квартири',
-            price: '60000 $'
+            price: '60000'
           }
         ]
       }
@@ -42,6 +43,7 @@ class App extends React.Component {
     <div className="wrapper">
       Нерухомість
       <Header/>
+      <Items items={this.state.items}/>
       <Footer/>
     </div>
   );
