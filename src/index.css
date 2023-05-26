@@ -20,6 +20,11 @@ body{
 
 /* Header style START */
 
+header{
+  position: relative;
+  
+}
+
 header .logo{
   font-size: 20px;
   font-weight: 600;
@@ -77,6 +82,61 @@ header ul.nav li:hover{
   color: rgb(23, 74, 183);
   opacity: 0.5;
 }
+
+header .cart__button__goAndSee{
+  width: 25px;
+  height: 25px;
+  float: right;
+  cursor: pointer;
+  transition: color, transform 400ms ease;
+}
+
+header .cart__button__goAndSee:hover,
+header .cart__button__goAndSee.active{
+  color: rgb(28, 219, 226);
+  transform: scale(1.3);
+}
+
+header .cart__opened{
+  position: absolute;
+  width: 400px;
+  top: 40px;
+  right: 0px;
+  background-color: #d8e0e4;
+  -webkit-box-shadow: 5px 24px 45px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 24px 45px -14px rgba(0,0,0,0.75);
+  box-shadow: 5px 24px 45px -14px rgba(0,0,0,0.75);
+  z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+header .cart__opened .item{
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+header .cart__opened .item img{
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+  
+}
+
+header .cart__opened .item h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .cart__opened .item b{
+  color: #919090;
+  font-weight: 600;
+}
+
+
+
+
 
 /* END */
 
