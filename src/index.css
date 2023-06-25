@@ -109,12 +109,14 @@ header .cart__opened{
   z-index: 1000;
   padding: 20px;
   padding-bottom: 0;
+  padding-top: 10px;
 }
 
 header .cart__opened .item{
   width: 100%;
   float: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 header .cart__opened .item img{
@@ -133,6 +135,26 @@ header .cart__opened .item b{
   color: #919090;
   font-weight: 600;
 }
+
+header .cart__opened .empty h3{
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+header .cart__opened .item .delete__icon{
+  color: rgb(154, 33, 33);
+  position: relative;
+  float: right;
+  top: -25px;
+  cursor: pointer;
+  transition: color transform 300ms ease;
+}
+
+header .cart__opened .item .delete__icon:hover{
+  color: rgb(121, 11, 11);
+  transform: scale(1.8);
+}
+
 
 
 
